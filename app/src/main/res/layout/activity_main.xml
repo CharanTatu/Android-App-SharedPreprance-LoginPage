@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:text="Login User"
+         android:textSize="25dp"
+         android:textColor="#E91E63"
+         android:textStyle="bold"
+         android:padding="10dp"
+         />
+    <EditText
+        android:id="@+id/user"
+        android:hint="Username"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/pass"
+        android:hint="Password"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:background="#00BCD4"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Login"
+            android:id="@+id/log"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pass"
+            />
+        <Button
+            android:id="@+id/regis"
+            android:text="Register"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
